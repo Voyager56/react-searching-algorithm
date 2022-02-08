@@ -7,7 +7,6 @@ const createBoard = () => {
   return Array.from({ length: 20 }, () => Array.from({ length: 20 }, () => Math.floor(Math.random() * 100)));
 };
 
-// implement 2d array search for target
 const searchArray = (arr, target) => {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
@@ -45,7 +44,6 @@ function App() {
     setRow(0);
     setCol(0);
   };
-  // if found color target cell green
 
   return (
     <div className="App">
